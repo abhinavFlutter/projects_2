@@ -5,10 +5,8 @@ main(){
 runApp(MyApp());
 }
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});{
-    var paint = Paint();
-    paint.color=Colors  black.54;
-  }
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
