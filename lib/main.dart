@@ -1,15 +1,20 @@
 import 'package:flutter/material.dart';
-main() {
-  runApp(app1());
+import 'package:projects_2/screens/text_widget.dart';
+import 'package:projects_2/screens/text_widget2.dart';
+main(){
+runApp(MyApp());
 }
-class app1 extends StatelessWidget{
-  Widget build(BuildContext context){
-    return MaterialApp(
-      home:Scaffold(
-        body:Center(
-          child:Text("Abhinav")
-        )
-      )
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});{
+    var paint = Paint();
+    paint.color=Colors  black.54;
+  }
+  @override
+  Widget build(BuildContext context) {
+    return  MaterialApp(
+      home: TextSample2()
+
+
     );
   }
 }
