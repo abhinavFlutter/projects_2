@@ -9,7 +9,7 @@ class Scaffold1 extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.green,
         centerTitle: true,
-        title: Text(
+        title: const Text(
           "Bridge Events",
           style: TextStyle(
             fontSize: 35,
@@ -17,29 +17,31 @@ class Scaffold1 extends StatelessWidget {
         ),
         foregroundColor: Colors.black,
       ),
-      body: Center(
+      body: const Center(
         child: Text("HelloWorld"),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        child: Text(
+        backgroundColor: Colors.greenAccent,
+        foregroundColor: Colors.black,
+        child: const Text(
           "+",
           style: TextStyle(
             fontSize: 35,
           ),
         ),
-        backgroundColor: Colors.greenAccent,
-        foregroundColor: Colors.black,
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
-      drawer: Drawer(
+      drawer: const Drawer(
+        backgroundColor: Colors.black12,
         child: Text(
           "Profile",
           style: TextStyle(
               fontStyle: FontStyle.italic, fontSize: 17, color: Colors.white),
         ),
-        backgroundColor: Colors.black12,
       ),
     );
-  
+  }
+}
+
 

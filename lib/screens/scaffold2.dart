@@ -9,7 +9,7 @@ class Scaffold2 extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.pink,
         centerTitle: true,
-        title: Text(
+        title: const Text(
           "Flutter project",
           style: TextStyle(
             fontSize: 15,
@@ -17,8 +17,7 @@ class Scaffold2 extends StatelessWidget {
           ),
         ),
       ),
-
-      body: Center(
+      body: const Center(
         child: Text("Flutter Project With Scaffold",
             style: TextStyle(
               fontStyle: FontStyle.italic,
@@ -27,20 +26,21 @@ class Scaffold2 extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        child: Text(
+        backgroundColor: Colors.white,
+        child: const Text(
           "Add",
           style: TextStyle(
             fontSize: 18,
             color: Colors.black,
           ),
         ),
-        backgroundColor: Colors.white,
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
-      drawer: Drawer(
+      drawer: const Drawer(
         backgroundColor: Colors.greenAccent,
         child: Text(
-          "Profile",textAlign: TextAlign.center,
+          "Profile",
+          textAlign: TextAlign.center,
           style: TextStyle(
             fontSize: 40,
             color: Colors.blue,
@@ -52,7 +52,7 @@ class Scaffold2 extends StatelessWidget {
         ElevatedButton(
             onPressed: () {},
             style: ElevatedButton.styleFrom(backgroundColor: Colors.white),
-            child: Text("Next",
+            child: const Text("Next",
                 style: TextStyle(
                   color: Colors.black,
                   backgroundColor: Colors.white,
@@ -60,7 +60,7 @@ class Scaffold2 extends StatelessWidget {
         ElevatedButton(
             onPressed: () {},
             style: ElevatedButton.styleFrom(backgroundColor: Colors.white),
-            child: Text("Previous",
+            child: const Text("Previous",
                 style: TextStyle(
                   color: Colors.black,
                   backgroundColor: Colors.white,
