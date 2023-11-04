@@ -8,11 +8,14 @@ class Assi10 extends StatelessWidget {
     return const Scaffold(
       body: Column(
         children: [
-          TextField(
-            decoration: InputDecoration(
-              icon: Icon(Icons.search),hintText:"Search",
-                border: OutlineInputBorder()
-            )
+          Padding(
+            padding: EdgeInsets.all(8.0),
+            child: TextField(
+              decoration: InputDecoration(
+                prefix:  Icon(Icons.home),
+                  border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(10)))
+              )
+            ),
           )
         ],
       ),

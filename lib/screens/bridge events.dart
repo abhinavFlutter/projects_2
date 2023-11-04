@@ -18,6 +18,29 @@ class Bridge extends StatelessWidget {
           ),
         ),
       ),
+      body: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(9.0),
+            child: TextField(
+              decoration: InputDecoration(
+                filled: true,
+                fillColor: Colors.black26,
+                border: const OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(25))),
+                prefixIcon: const Icon(Icons.search, color: Colors.black),
+                hintText: "search",
+                labelText: "search",
+                suffixIcon: IconButton(
+                  onPressed: () {},
+                  icon: const Icon(Icons.arrow_drop_down_circle),
+                  color: Colors.black,
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         backgroundColor: Colors.black12,
@@ -37,14 +60,44 @@ class Bridge extends StatelessWidget {
           ),
         ),
       ],
-      drawer:  Drawer(
-       child: Column(
-         children: [
-           const Text("Profile",style: TextStyle(fontSize: 55),),
-           Container(height: 100,width: 550,color: Colors.black,child: const Text("Home")),
-           Container(height: 100,width: 550,color: Colors.black,child: const Text("menu"),)
-         ],
-       ),
+      drawer: Drawer(
+        child: Column(
+          children: [
+            const Padding(
+              padding: EdgeInsets.all(8.0),
+              child: Text(
+                "Profile",
+                style: TextStyle(fontSize: 35),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                decoration:
+                BoxDecoration(borderRadius:
+                BorderRadius.circular(10),border:
+                Border.all(),),
+                  height: 30,
+                  width: 300,
+                child: const Center(
+                  child: Text("Home",)),
+              ),
+            ),
+      Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Container(
+          decoration:
+          BoxDecoration(borderRadius:
+          BorderRadius.circular(10),border:
+          Border.all(),),
+          height: 30,
+          width: 300,
+          child: const Center(
+              child: Text("Menu",)),
+        ),
+      ),
+          ],
+        ),
       ),
     );
   }

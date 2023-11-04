@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 class TextSample1 extends StatelessWidget {
-  String _name="abhinav";
+  final String _name="abhinav";
    TextSample1({super.key});
 
   @override
@@ -8,7 +8,7 @@ class TextSample1 extends StatelessWidget {
     return  Scaffold(
       body:Center(
          child:Text("Hello $_name",
-           style:TextStyle(
+           style:const TextStyle(
                fontSize: 50,
              color:Colors.red,
              backgroundColor: Colors.greenAccent

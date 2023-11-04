@@ -5,7 +5,7 @@ class TextSample2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return  const Scaffold(
       body: Text("This is text",
       style:TextStyle(
        fontStyle: FontStyle.italic,
