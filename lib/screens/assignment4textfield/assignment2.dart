@@ -9,8 +9,11 @@ class Assi2 extends StatelessWidget {
      body: Column(
       children: [
        TextField(
-         decoration: InputDecoration(
-         errorBorder: OutlineInputBorder(
+
+         decoration: InputDecoration(enabledBorder: OutlineInputBorder(),
+         errorBorder: OutlineInputBorder(borderRadius:
+         BorderRadius.all(Radius.circular(3.0),
+             )
          )
      ),
         ),
