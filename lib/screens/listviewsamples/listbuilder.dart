@@ -32,33 +32,33 @@ class Sample2 extends StatelessWidget {
         body: Padding(
       padding: const EdgeInsets.all(15.0),
       child: ListView.builder(
-          itemCount: name.length,
-          itemBuilder: (context, index) {
-            return Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(70.0),
-                      color: Colors.teal[colorCode[index]],
-                    ),
-                    height: 78,
-                    alignment: Alignment.center,
-                    // color: Colors.pink[colorCode[index]],
-                    child: Padding(
-                      padding: const EdgeInsets.all(6.0),
-                      child: ListTile(
-                        trailing:  IconButton(icon: const Icon(Icons.call), onPressed: () {
-                        },color: Colors.white),
+      itemCount: name.length,
+      itemBuilder: (context, index) {
+        return Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(70.0),
+                  color: Colors.teal[colorCode[index]],
+                ),
+                height: 78,
+                alignment: Alignment.center,
+                // color: Colors.pink[colorCode[index]],
+                child: Padding(
+                  padding: const EdgeInsets.all(6.0),
+                  child: ListTile(
+                    trailing:  IconButton(icon: const Icon(Icons.call), onPressed: () {
+                    },color: Colors.white),
 
-                        title: Text(name[index]),
-                        subtitle: Text('${phn[index]}'),
-                        leading: CircleAvatar(
-                          backgroundColor: Colors.white,
-                          child: Image.network(profile[index]),
-                        ),
-                      ),
-                    )));
-          }),
+                    title: Text(name[index]),
+                    subtitle: Text('${phn[index]}'),
+                    leading: CircleAvatar(
+                      backgroundColor: Colors.white,
+                      child: Image.network(profile[index]),
+                    ),
+                  ),
+                )));
+      }),
     ));
   }
 }
