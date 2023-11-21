@@ -13,14 +13,20 @@ class _Sample1State extends State<Sample1> {
     print("Done");
     await launchUrl(Uri.parse('https://pub.dev/packages/url_launcher'));
   }
-  openBrowser1()async{
+
+  openBrowser1() async {
     print("photos done");
     await launchUrl(Uri.parse('https://unsplash.com/s/photos/photo'));
   }
 
+  openBrowser2() async {
+    print("fb login");
+    await launchUrl(Uri.parse('https://www.facebook.com/login/'));
+  }
+
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       body: Column(
         children: [
           ElevatedButton(onPressed: () {
@@ -31,7 +37,10 @@ class _Sample1State extends State<Sample1> {
             child: ElevatedButton(onPressed: () {
               openBrowser1();
             }, child: const Text("Photos")),
-          )
+          ),
+          ElevatedButton(onPressed: () {
+            openBrowser2();
+          }, child: const Text("login"))
         ],
       ),
     );

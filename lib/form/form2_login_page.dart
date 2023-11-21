@@ -12,8 +12,8 @@ class Frm2 extends StatefulWidget {
 
 class _Frm2State extends State<Frm2> {
   final loginkey = GlobalKey<FormState>();
-  final TextEditingController password = TextEditingController();
-  final TextEditingController confirm = TextEditingController();
+  var  password = TextEditingController();
+  var confirm = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(

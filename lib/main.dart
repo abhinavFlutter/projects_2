@@ -1,10 +1,8 @@
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:projects_2/form/form1.dart';
-import 'package:projects_2/form/form2_login_page.dart';
-import 'package:projects_2/package/urlSample.dart';
-import 'package:projects_2/package/url_form.dart';
-import 'package:projects_2/trash/form-trash.dart';
+import 'package:projects_2/alert/sample1.dart';
+import 'package:projects_2/profile_sample.dart';
 
 main(){
 runApp(const MyApp());
@@ -15,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  const MaterialApp(
-        home: Sample1(),
+        home: Alert1(),
       debugShowCheckedModeBanner: false,
 
     );

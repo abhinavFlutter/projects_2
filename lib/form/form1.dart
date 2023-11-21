@@ -34,6 +34,8 @@ class _FrmState extends State<Frm> {
               Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: TextFormField(
+                  obscureText: true,
+                  obscuringCharacter: '*',
                   decoration: const InputDecoration(hintText: 'enter your password',
                       labelText: 'password'
                   ),
