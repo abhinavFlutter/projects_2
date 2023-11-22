@@ -14,7 +14,7 @@ class _Alert1State extends State<Alert1> {
       context: context,
       builder: (context) {
         return AlertDialog(
-          title: Text("Do you want to move to next page"),
+          title: const Text("Do you want to move to next page"),
           actions: [
             ElevatedButton(
                 onPressed: () {
@@ -31,14 +31,14 @@ class _Alert1State extends State<Alert1> {
                     // ));
                   });
                 },
-                child: Text("Yes")),
+                child: const Text("Yes")),
             ElevatedButton(
                 onPressed: () {
                   setState(() {
                     Navigator.pop(context);
                   });
                 },
-                child: Text("No"))
+                child: const Text("No"))
           ],
         );
       },

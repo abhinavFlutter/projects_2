@@ -23,11 +23,6 @@ class Ch extends StatelessWidget {
               color: Colors.white,
               width: 55,
               height: 55,
-              // child: const Icon(Icons.home,shadows: [Shadow(blurRadius: 5.0)]),
-              child:IconButton(
-                onPressed: () {},
-                icon: const Icon(Icons.back_hand),
-              ),
 
             ),
             Container(
