@@ -107,8 +107,8 @@ class _EditProfilePageState extends State<EditProfilePage> {
 
                       // Show success message
                       ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(
-                          content: const Text('Profile updated successfully'),
+                        const SnackBar(
+                          content: Text('Profile updated successfully'),
                         ),
                       );
                     }

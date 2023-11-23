@@ -11,11 +11,11 @@ class _ToolTip1State extends State<ToolTip1> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Vibes Communication"),
+        title: const Text("Vibes Communication"),
       ),
-      body: Center(
+      body: const Center(
         child: Tooltip(
-          message: "njekkikko",
+          message: "trekking",
           child: Text("Done"),
         )
 
