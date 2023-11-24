@@ -1,11 +1,8 @@
-import 'package:flutter/material.dart';
-import 'package:projects_2/part1_assignment/popup_menu/popup.dart';
-import 'package:projects_2/part2_assignment/q1.dart';
-import 'package:projects_2/part2_assignment/q2.dart';
-import 'package:projects_2/part2_assignment/q3.dart';
-import 'package:projects_2/part2_assignment/q6.dart';
-import 'package:projects_2/part2_assignment/q5.dart';
 
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:projects_2/part2_assignment/q10_profile_page.dart';
+import 'package:projects_2/part3_assignment/settings_page.dart';
 
 main() {
   runApp(const MyApp());
@@ -16,9 +13,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(primarySwatch: Colors.purple),
-      home: Qt6(),
+    return const MaterialApp(
+      // theme: ThemeData(primarySwatch: Colors.purple),
+      home: SettingsQt1(),
     );
   }
 }
