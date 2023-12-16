@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:projects_2/assignment2/q1.dart';
 
 class Alert1 extends StatefulWidget {
   const Alert1({super.key});

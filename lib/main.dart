@@ -1,13 +1,12 @@
 
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:projects_2/part4_assignment/q10.dart';
-import 'package:projects_2/part4_assignment/q11.dart';
-import 'package:projects_2/part4_assignment/q12.dart';
-import 'package:projects_2/part4_assignment/q5.dart';
-import 'package:projects_2/part4_assignment/q7.dart';
-import 'package:projects_2/part4_assignment/q8.dart';
-import 'package:projects_2/part4_assignment/q9.dart';
+import 'package:get/get.dart';
+import 'package:projects_2/part2_assignment/quizApp.dart';
+
+import 'GetX/GetX/view/home.dart';
+import 'GetX/GetX/view/loginView.dart';
 
 main() {
   runApp(const MyApp());
@@ -18,9 +17,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  GetMaterialApp(
+        initialRoute: '/',
+        getPages: [
+          GetPage(name: '/', page: () => GetxLogin()),
+          GetPage(name: '/home', page: () => HomePage()),
+        ],
       // theme: ThemeData(primarySwatch: Colors.purple),
-      home: textfieldQ12(),
+      home:GetxLoginwoky()
     );
   }
 }

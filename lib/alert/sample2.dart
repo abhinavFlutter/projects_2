@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:projects_2/assignment2/q1.dart';
-import 'package:projects_2/trash/spotify.dart';
+
+
+import '../part2_assignment/q1.dart';
 
 class Alert2 extends StatefulWidget {
   const Alert2({super.key});

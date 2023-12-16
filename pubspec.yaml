@@ -38,6 +38,16 @@ dependencies:
   url_launcher: ^6.2.1
   table_calendar: ^3.0.9
   flutter_screenutil: ^5.9.0
+  fluttertoast: ^8.2.4
+  torch_light: ^1.0.0
+  flutter_zoom_drawer: ^3.1.1
+  get: ^4.6.6
+  anim_search_bar: ^2.0.3
+  dot_navigation_bar: ^1.0.2
+  sensors_plus: ^4.0.2
+  video_player: ^2.8.1
+  camera: ^0.10.5+7
+  provider: ^6.1.1
 
 dev_dependencies:
   flutter_test:
