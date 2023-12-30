@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
           GetPage(name: '/home', page: () => HomePage()),
         ],
       // theme: ThemeData(primarySwatch: Colors.purple),
-      home:GetxLoginwoky()
+      home:GetxLogin()
     );
   }
 }
